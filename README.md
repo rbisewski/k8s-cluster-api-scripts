@@ -23,11 +23,11 @@ Install the latest Cluster API onto your Kubernetes cluster:
 
 ```bash
 k8s create -f https://github.com/kubernetes-sigs/cluster-api/releases/download/v0.2.3/cluster-api-components.yaml
-k8s create -f https://github.com/kubernetes-sigs/cluster-api-bootstrap-provider-kubeadm/releases/download/v0.1.0/bootstrap-components.yaml
 ```
 
-Clone the GCP provider repo:
+To setup your local cluster as a "bootstrapped" Cluster API to interact with,
+use this kubeadm-supported yaml:
 
 ```bash
-git clone https://github.com/kubernetes-sigs/cluster-api-provider-gcp
+k8s create -f https://github.com/kubernetes-sigs/cluster-api-bootstrap-provider-kubeadm/releases/download/v0.1.1/bootstrap-components.yaml
 ```
